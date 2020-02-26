@@ -8,21 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		9FB57AB7240686E400E5ABFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB57AB6240686E400E5ABFF /* AppDelegate.swift */; };
-		9FB57AB9240686E400E5ABFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB57AB8240686E400E5ABFF /* ContentView.swift */; };
 		9FB57ABB240686E500E5ABFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB57ABA240686E500E5ABFF /* Assets.xcassets */; };
 		9FB57ABE240686E500E5ABFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB57ABD240686E500E5ABFF /* Preview Assets.xcassets */; };
 		9FB57AC1240686E500E5ABFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB57ABF240686E500E5ABFF /* Main.storyboard */; };
+		9FB57AD1240698B700E5ABFF /* v2ray in Resources */ = {isa = PBXBuildFile; fileRef = 9FB57ACC240698B600E5ABFF /* v2ray */; };
+		9FB57AD2240698B700E5ABFF /* geosite.dat in Resources */ = {isa = PBXBuildFile; fileRef = 9FB57ACD240698B600E5ABFF /* geosite.dat */; };
+		9FB57AD3240698B700E5ABFF /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB57ACE240698B600E5ABFF /* config.json */; };
+		9FB57AD4240698B700E5ABFF /* v2ctl in Resources */ = {isa = PBXBuildFile; fileRef = 9FB57ACF240698B600E5ABFF /* v2ctl */; };
+		9FB57AD5240698B700E5ABFF /* geoip.dat in Resources */ = {isa = PBXBuildFile; fileRef = 9FB57AD0240698B700E5ABFF /* geoip.dat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9FB57AB3240686E400E5ABFF /* v2rayTray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = v2rayTray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB57AB6240686E400E5ABFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FB57AB8240686E400E5ABFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9FB57ABA240686E500E5ABFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FB57ABD240686E500E5ABFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FB57AC0240686E500E5ABFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FB57AC2240686E500E5ABFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FB57AC3240686E500E5ABFF /* v2rayTray.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = v2rayTray.entitlements; sourceTree = "<group>"; };
+		9FB57ACA2406983C00E5ABFF /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = config.json; path = "../../../../../Applications/v2ray-macos/config.json"; sourceTree = "<group>"; };
+		9FB57ACB2406983C00E5ABFF /* v2ray */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = v2ray; path = "../../../../../Applications/v2ray-macos/v2ray"; sourceTree = "<group>"; };
+		9FB57ACC240698B600E5ABFF /* v2ray */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = v2ray; sourceTree = "<group>"; };
+		9FB57ACD240698B600E5ABFF /* geosite.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = geosite.dat; sourceTree = "<group>"; };
+		9FB57ACE240698B600E5ABFF /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		9FB57ACF240698B600E5ABFF /* v2ctl */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = v2ctl; sourceTree = "<group>"; };
+		9FB57AD0240698B700E5ABFF /* geoip.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = geoip.dat; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,8 +49,14 @@
 		9FB57AAA240686E400E5ABFF = {
 			isa = PBXGroup;
 			children = (
+				9FB57ACE240698B600E5ABFF /* config.json */,
+				9FB57AD0240698B700E5ABFF /* geoip.dat */,
+				9FB57ACD240698B600E5ABFF /* geosite.dat */,
+				9FB57ACF240698B600E5ABFF /* v2ctl */,
+				9FB57ACC240698B600E5ABFF /* v2ray */,
 				9FB57AB5240686E400E5ABFF /* v2rayTray */,
 				9FB57AB4240686E400E5ABFF /* Products */,
+				9FB57AC92406983C00E5ABFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				9FB57AB6240686E400E5ABFF /* AppDelegate.swift */,
-				9FB57AB8240686E400E5ABFF /* ContentView.swift */,
 				9FB57ABA240686E500E5ABFF /* Assets.xcassets */,
 				9FB57ABF240686E500E5ABFF /* Main.storyboard */,
 				9FB57AC2240686E500E5ABFF /* Info.plist */,
@@ -72,6 +87,15 @@
 				9FB57ABD240686E500E5ABFF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FB57AC92406983C00E5ABFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FB57ACA2406983C00E5ABFF /* config.json */,
+				9FB57ACB2406983C00E5ABFF /* v2ray */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +156,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB57AD1240698B700E5ABFF /* v2ray in Resources */,
+				9FB57AD2240698B700E5ABFF /* geosite.dat in Resources */,
+				9FB57AD3240698B700E5ABFF /* config.json in Resources */,
+				9FB57AD4240698B700E5ABFF /* v2ctl in Resources */,
+				9FB57AD5240698B700E5ABFF /* geoip.dat in Resources */,
 				9FB57AC1240686E500E5ABFF /* Main.storyboard in Resources */,
 				9FB57ABE240686E500E5ABFF /* Preview Assets.xcassets in Resources */,
 				9FB57ABB240686E500E5ABFF /* Assets.xcassets in Resources */,
@@ -145,7 +174,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FB57AB9240686E400E5ABFF /* ContentView.swift in Sources */,
 				9FB57AB7240686E400E5ABFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +308,6 @@
 		9FB57AC7240686E500E5ABFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = v2rayTray/v2rayTray.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -303,7 +330,6 @@
 		9FB57AC8240686E500E5ABFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = v2rayTray/v2rayTray.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
